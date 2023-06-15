@@ -46,4 +46,3 @@ ytd_visit_counts_all_vars <- visits_by_dx_and_epi_week_ytd(ytd_data1)
 date <- str_replace_all(Sys.Date(), "-", "")
 path <- paste0("ytd_data/ytd_visit_counts_", date, ".Rda")
 save(ytd_visit_counts_all_vars, file = path)
-
