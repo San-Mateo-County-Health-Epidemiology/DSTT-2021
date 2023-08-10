@@ -54,3 +54,5 @@ hist_avg_p
 subplot(hist_time_p,
         hist_avg_p,
         nrows = 2)
+
+## add some more plots here ----
