@@ -20,7 +20,7 @@ library(roll)
 # load historical data ---------------------------
 load("historical_data/historical_data.Rda")
 
-# look at the data over time --------------------
+# look at the data over time ---------------------
 ## visits by hospital ----
 hist_time_p <- historical_data1 %>%
   count(visit_month, hospital_name) %>%
@@ -49,7 +49,7 @@ hist_avg_p <- historic_averages %>%
 
 hist_avg_p
 
-## look at the plots side by side
+## look at the plots side by side ----
 subplot(hist_time_p,
         hist_avg_p,
         nrows = 2)
