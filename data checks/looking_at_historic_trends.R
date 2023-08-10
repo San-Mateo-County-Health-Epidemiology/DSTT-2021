@@ -40,6 +40,7 @@ historic_averages <- historical_data1 %>%
   mutate(avg_visits = tot_visits/particip_hosp,
          roll_avg_visits = rollmean(avg_visits, k = 5, na.pad = T, align = "center"))
 
+### make the plot ----
 hist_avg_p <- historic_averages %>%
   select(week_start, avg_visits, roll_avg_visits) %>%
   arrange(week_start) %>%
